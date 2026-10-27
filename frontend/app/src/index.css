@@ -1,0 +1,107 @@
+
+@import "tailwindcss";
+
+@plugin "daisyui";
+
+/* Change these variables to restyle the application. */
+:root {
+	--page-background: #f9fafb;
+	--surface-background: #ffffff;
+	--muted-background: #f8fafc;
+	--heading-color: #0f172a;
+	--body-color: #334155;
+	--muted-color: #64748b;
+	--border-color: #e2e8f0;
+}
+
+html {
+	scroll-behavior: smooth;
+	scroll-padding-top: 4rem;
+}
+
+/* Edit these values to customize dark mode. */
+html.dark {
+	--page-background: #0f172a;
+	--surface-background: #1e293b;
+	--muted-background: #172033;
+	--heading-color: #f8fafc;
+	--body-color: #e2e8f0;
+	--muted-color: #94a3b8;
+	--border-color: #334155;
+}
+
+html.dark,
+html.dark body {
+	background: var(--page-background);
+}
+
+html.dark .bg-\[\#F9FAFB\] {
+	background-color: var(--page-background);
+}
+
+html.dark .bg-white {
+	background-color: var(--surface-background);
+}
+
+html.dark .bg-slate-50,
+html.dark .bg-slate-50\/50 {
+	background-color: var(--muted-background);
+}
+
+html.dark .text-slate-900 {
+	color: var(--heading-color);
+}
+
+html.dark .text-slate-800,
+html.dark .text-slate-700 {
+	color: var(--body-color);
+}
+
+html.dark .text-slate-600,
+html.dark .text-slate-500 {
+	color: var(--muted-color);
+}
+
+html.dark .border-slate-200,
+html.dark .border-slate-200\/80,
+html.dark .border-slate-100 {
+	border-color: var(--border-color);
+}
+
+html.dark input {
+	background-color: var(--muted-background);
+	color: var(--heading-color);
+}
+
+/* Navbar-specific styles. */
+.site-header {
+	background-color: color-mix(in srgb, var(--page-background) 90%, transparent);
+	border-color: var(--border-color);
+}
+
+.site-header__brand {
+	color: var(--heading-color);
+}
+
+.site-header__links {
+	color: var(--muted-color);
+}
+
+.site-header__link:hover,
+.site-header__login:hover {
+	color: var(--heading-color);
+}
+
+.site-header__login {
+	color: var(--body-color);
+}
+
+.theme-toggle {
+	background-color: var(--surface-background);
+	border-color: var(--border-color);
+	color: var(--body-color);
+}
+
+.theme-toggle:hover {
+	background-color: var(--muted-background);
+}

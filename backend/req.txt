@@ -1,0 +1,14 @@
+fastapi
+python-jose[cryptography]
+uvicorn
+sqlalchemy
+psycopg2-binary
+pydantic
+python-dotenv
+groq
+pytest
+httpx
+bcrypt
+python-multipart
+pypdf
+redis
